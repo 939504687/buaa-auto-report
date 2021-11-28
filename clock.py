@@ -58,6 +58,8 @@ def main(argv):
         print(re.json())
         sckey=argv[3]
         msg=re.json()['m']
-        requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡成功啦！&desp=" + msg)
+
+        requests.get("http://sc.ftqq.com/"+ sckey +".send?text=打卡成功！&desp=" + msg)
+
 if __name__=='__main__':
         main(sys.argv)
